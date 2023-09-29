@@ -1,0 +1,120 @@
+.info {
+  &__rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    color: var(--black);
+    font-size: 32px;
+  }
+  &__wrapp {
+    position: relative;
+  }
+  &__input {
+    padding: 13px 0 13px 45px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #746d6d;
+  }
+  &__icons {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  &__wrapper {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px 30px;
+  }
+  &__row {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 18.75px);
+    min-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px 4px #e6dddd;
+    transition: 0.3s;
+  }
+  &__row:hover {
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px 4px #918e8e;
+    transform: translateY(-3px);
+    transition: 0.3s;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__subtitle {
+    color: var(--black);
+    font-size: 14px;
+  }
+  &__subrow {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    margin-bottom: 5px;
+    color: #bdbdbd;
+    font-size: 13px;
+  }
+  &__price {
+    color: var(--black);
+    font-size: 14px;
+  }
+  &__btn {
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 7px;
+    transition: 0.3s;
+  }
+  &__btn:hover {
+   filter: brightness(0.3) invert(1);
+   transition: 0.3s;
+  }
+}
+@media (max-width: 1000px) {
+  .info {
+    &__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media (max-width: 750px) {
+  .info {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 570px) {
+  .info {
+    &__rows {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__row {
+      display: flex;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .info {
+    &__input {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>sneakers</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img class="header__img" src="./src/images/header/image 4.svg" alt="header__logo">
+          <h1 class="header__title">REACT SNEAKERS</h1>
+        </div>
+        <div class="header__wrapp">
+          <div>
+          <a class="header__corzina" href="#"><img src="./src/images/header/Group.svg" alt="header__img"></a>
+          </div>
+          <sup class="header__sup"><span class="header__sups">0</span> руб.</sup>
+        </div>
+      </div>
+      <img class="header__images" src="./src/images/header/images.png" alt="header__images">
+    </div>
+  </header>
+  <main>
+    <section class="info">
+      <div class="container">
+        <div class="info__rows">
+          <h2 class="info__title">Все кроссовки</h2>
+          <div class="info__wrapp">
+            <label> <input class="info__input" placeholder="Поиск..." type="text" required></label>
+            <img class="info__icons" src="./src/images/beis/Group.svg" alt="info__icons">
+          </div>
+        </div>
+        <div class="info__wrapper">
+        
+        </div>
+      </div>
+    </section>
+    <!-- json-server --watch db.json -->
+    <div class="overlay">
+      <div class="overlay__popup">
+        <h3 class="overlay__title">Корзина</h3>
+        <span class="overlay__x"><img src="./src/images/footer/krest.svg" alt="img-svg"></span>
+        <div class="overlay__header">
+          </div>
+          <div class="overlay__futter">
+            <div class="overlay__sup">
+              <h5 class="overlay__text">Итого:</h5>
+              <sup class="overlay__summa"><span class="overlay__summ">0</span> руб. </sup>
+            </div>
+            <div class="overlay__null">
+              <h5 class="overlay__deis">Налог 5%: </h5>
+              <sup class="overlay__sum"><span class="overlay__sups">0</span>  руб. </sup>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <script src="./src/js/script.js"></script>
+</body>
+</html>
