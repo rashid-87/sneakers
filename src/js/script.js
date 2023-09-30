@@ -79,7 +79,7 @@ window.addEventListener("load", () => {
     } else {
        overlayRow.innerHTML = `
        <div class="overlay__corsin"> 
-        <img class="overlay__cors" src="../src/images/footer/cortin.png" alt="img">
+        <img class="overlay__cors" src="./src/images/footer/cortin.png" alt="img">
         <h4 class="overlay__pust">Корзина пустая</h4>
         <p class="overlay__dob">Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.</p>
        </div> 
